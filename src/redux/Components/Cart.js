@@ -1,7 +1,7 @@
 // Cart.js
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeFromCart } from './redux/action'; // Import the new action
+import { removeFromCart } from '../action'; // Import the new action
 
 function Cart() {
   const cart = useSelector((state) => state.cart);

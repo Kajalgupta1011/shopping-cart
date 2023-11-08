@@ -1,8 +1,8 @@
 // App.js
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Cart from './Cart';
-import Frontpage from './Frontpage';
+import Cart from './redux/Components/Cart';
+import Frontpage from './redux/Components/Frontpage';
 
 function App() {
   return (
