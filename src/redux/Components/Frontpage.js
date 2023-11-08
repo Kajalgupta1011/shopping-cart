@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ProductFeed from "./ProductFeed";
 import { Link } from 'react-router-dom';
-import './App.css';
+import '../../App.css';
 function Frontpage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
