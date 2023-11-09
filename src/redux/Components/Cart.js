@@ -15,7 +15,7 @@ function Cart() {
     <div className='cart'>
       <h1>Cart</h1>
       <ul>
-        {cart.map((product) => (
+        {cart?.map((product) => (
           <li key={product.id}>
             {product.title} - {product.price}$
             <button onClick={() => handleRemoveFromCart(product.id)}>
