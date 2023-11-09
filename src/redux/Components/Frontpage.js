@@ -56,7 +56,7 @@ function Frontpage() {
           <ProductFeed />
         </div>
       ) : (
-        <div>
+        <div className="login-container">
           <h1>Login</h1>
           <input
             type="text"
