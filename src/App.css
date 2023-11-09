@@ -74,3 +74,8 @@ body {
   max-width: 500px;
   margin: 0 auto;
 }
+.login-inputs {display: flex;flex-direction: column;gap: 30px;}
+
+.login-inputs button {
+padding: 9px 22px;  
+}
