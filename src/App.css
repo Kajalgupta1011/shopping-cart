@@ -70,3 +70,6 @@ body {
   justify-content: space-between;
   padding: 50px 20px;
 }
+.login-container{
+  max-width: 500px;
+  margin: 0 auto;
