@@ -58,7 +58,8 @@ function Frontpage() {
       ) : (
         <div className="login-container">
           <h1>Login</h1>
-          <input
+          <div className="login-inputs">
+<input
             type="text"
             placeholder="Username"
             value={username}
@@ -71,6 +72,7 @@ function Frontpage() {
             onChange={(e) => setPassword(e.target.value)}
           />
           <button onClick={handleLogin}>Login</button>
+              </div>
         </div>
       )}
     </div>
