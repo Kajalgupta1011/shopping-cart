@@ -5,6 +5,7 @@ import { removeFromCart } from '../action'; // Import the new action
 import '../../App.css';
 function Cart() {
   const cart = useSelector((state) => state.cart);
+  console.log(cart);
   const dispatch = useDispatch();
 
   const handleRemoveFromCart = (productId) => {
@@ -14,8 +15,7 @@ function Cart() {
   return (
     <div className='cart'>
       <h1>Cart</h1>
-      <ul>
-    console.log(cart);
+      <ul>  
         {cart?.map((product) => (
           <li key={product.id}>
             {product.title} - {product.price}$
