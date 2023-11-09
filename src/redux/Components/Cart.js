@@ -15,6 +15,7 @@ function Cart() {
     <div className='cart'>
       <h1>Cart</h1>
       <ul>
+    console.log(cart);
         {cart?.map((product) => (
           <li key={product.id}>
             {product.title} - {product.price}$
