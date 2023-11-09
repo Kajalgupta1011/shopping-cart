@@ -16,18 +16,22 @@ function Cart() {
 
   return (
     <div className='cart'>
-      <h1>Cart</h1>
-      <ul>
-        {cart.map((product) => (
+    <h1>Cart</h1>
+    <ul>
+      {Array.isArray(cart) && cart.length > 0 ? (
+        cart.map((product) => (
           <li key={product.id}>
             {product.title} - {product.price}$
             <button onClick={() => handleRemoveFromCart(product.id)}>
               Remove
             </button>
           </li>
-        ))}
-      </ul>
-    </div>
+        ))
+      ) : (
+        <li>No items in the cart</li>
+      )}
+    </ul>
+  </div>
   );
 }
 
